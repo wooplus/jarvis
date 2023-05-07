@@ -79,35 +79,16 @@
         </div>
       </div>
     </nav>
-    <form method="POST" class="form-container">
-      <div class="input-group mt-5">
-        <span class="input-group-text">Enter Text: </span>
-        <textarea
-          class="form-control"
-          aria-label="With textarea"
-          id="text"
-          name="text"
-        ></textarea>
-      </div>
-    </form>
-    <button class="btn play-btn btn-primary mt-4" id="play-btn">Play</button>
-    <div class="results-container mt-5" id="results-container">
-      <div class="gmail-container">
-        <div class="title">
-          <h3>LAG-ApptMgr-WC</h3>
-          <span>about 3 hours ago</span>
-        </div>
-        <div class="desc">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nobis
-            temporibus possimus debitis ipsam quam officiis sunt quisquam.
-            Labore excepturi ut quidem sint reiciendis asperiores, mollitia
-            explicabo perspiciatis esse sunt.
-          </p>
-        </div>
-      </div>
-    </div>
+    <form method="POST" class="form-container"></form>
+    <button class="btn play-btn btn-primary mt-4" id="play-btn">
+      Read My Email
+    </button>
+    <div class="results-container mt-5" id="results-container"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../script.js"></script>
+    <script
+      src="{{ url_for('static', filename='script.js') }}"
+      type="module"
+    ></script>
+    <script src="../static/script.js"></script>
   </body>
 </html>

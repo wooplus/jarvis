@@ -98,4 +98,16 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 
 .gmail-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.email-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.email-date {
+  color: rgb(89, 89, 89);
 }
