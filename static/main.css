@@ -1,0 +1,101 @@
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+* {
+  color: rgb(37, 37, 37);
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Main content styles */
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Audio player styles */
+audio {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-volume-slider-container,
+audio::-webkit-media-controls-timeline-container,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  display: none !important;
+}
+
+/* navbar  */
+
+.nav-title {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.fa-microphone {
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+
+.play-btn {
+  width: 10em;
+  display: block;
+  height: 10em;
+  border-radius: 50%;
+  font-size: 2em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: linear-gradient(to right, #cc2b5e, #753a88);
+  margin: 0 auto;
+  user-select: none;
+}
+
+.fa-google {
+  margin-top: 0.3em;
+  font-size: 3em;
+  color: #bb001b;
+  margin-bottom: 0.3em;
+}
+
+.sign-in-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.results-container {
+  display: none;
+}
+
+.gmail-container {
+}

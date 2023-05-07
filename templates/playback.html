@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text to Speech</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <h1>Text to Speech</h1>
+    <audio controls autoplay id="audio">
+        <source src="{{ url_for('static', filename=filename) }}" type="audio/mpeg">
+    </audio>
+    <p id="text"></p>
+    <script>
+        // Get the text from the query parameters in the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const text = urlParams.get('text');
+        document.getElementById('text').textContent = text;
+
+        // Play the audio file
+        const audio = document.getElementById('audio');
+        audio.play();
+    </script>
+</body>
+</html>
+
+
